@@ -1,0 +1,48 @@
+package nsfw
+
+import(
+	"github.com/Schmenn/nekos"
+)
+
+// NSFW endpoints
+const (
+	RandomHentaiGIF nekos.NSFWEndpoint = "/img/Random_hentai_gif"
+	Pussy           nekos.NSFWEndpoint = "/img/pussy"
+	NekoGIF         nekos.NSFWEndpoint = "/img/nsfw_neko_gif"
+	LewdNeko        nekos.NSFWEndpoint = "/img/lewd"
+	Lesbian         nekos.NSFWEndpoint = "/img/les"
+	Kuni            nekos.NSFWEndpoint = "/img/kuni"
+	CumSluts        nekos.NSFWEndpoint = "/img/cum"
+	Classic         nekos.NSFWEndpoint = "/img/classic"
+	Boobs           nekos.NSFWEndpoint = "/img/boobs"
+	BJ              nekos.NSFWEndpoint = "/img/bj"
+	Anal            nekos.NSFWEndpoint = "/img/anal"
+	Avatar          nekos.NSFWEndpoint = "/img/nsfw_avatar"
+	Yuri            nekos.NSFWEndpoint = "/img/nsfw_avatar"
+	Trap            nekos.NSFWEndpoint = "/img/trap"
+	Tits            nekos.NSFWEndpoint = "/img/tits"
+	GirlSoloGIF     nekos.NSFWEndpoint = "/img/solog"
+	GirlSolo        nekos.NSFWEndpoint = "/img/solo"
+	PussyWankGIF    nekos.NSFWEndpoint = "/img/pwankg"
+	PussyArt        nekos.NSFWEndpoint = "/img/pussy_jpg"
+	Kemonomimi      nekos.NSFWEndpoint = "/img/lewdkemo"
+	Kitsune         nekos.NSFWEndpoint = "/img/lewdk"
+	Keta            nekos.NSFWEndpoint = "/img/keta"
+	Holo            nekos.NSFWEndpoint = "/img/hololewd"
+	HoloEro         nekos.NSFWEndpoint = "/img/holoero"
+	Hentai          nekos.NSFWEndpoint = "/img/hentai"
+	Futanari        nekos.NSFWEndpoint = "/img/futanari"
+	Femdom          nekos.NSFWEndpoint = "/img/femdom"
+	FeetGIF         nekos.NSFWEndpoint = "/img/feetg"
+	EroFeet         nekos.NSFWEndpoint = "/img/erofeet"
+	Feet            nekos.NSFWEndpoint = "/img/feet"
+	Ero             nekos.NSFWEndpoint = "/img/ero"
+	EroKitsune      nekos.NSFWEndpoint = "/img/erok"
+	EroKemonomimi   nekos.NSFWEndpoint = "/img/erokemo"
+	EroNeko         nekos.NSFWEndpoint = "/img/eron"
+	EroYuri         nekos.NSFWEndpoint = "/img/eroyuri"
+	CumArts         nekos.NSFWEndpoint = "/img/cum_jpg"
+	BlowJob         nekos.NSFWEndpoint = "/img/blowjob"
+	Spank           nekos.NSFWEndpoint = "/img/spank"
+	Gasm            nekos.NSFWEndpoint = "/img/gasm"
+)
