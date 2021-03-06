@@ -52,6 +52,7 @@ func imgReq(c *Client, ep string) (string, error) {
 	if err != nil {
 		return "", err
 	}
+	defer res.Body.Close()
 	body, err := ioutil.ReadAll(res.Body)
 	var response urlresponse
 	err = json.Unmarshal(body, &response)
