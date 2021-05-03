@@ -2,8 +2,8 @@ package nekos
 
 import (
 	"encoding/json"
+	"errors"
 	"io/ioutil"
-	"log"
 	"net/http"
 	"time"
 )
@@ -37,10 +37,8 @@ func (c *Client) Image(endpoint interface{}) (string, error) {
 		return imgReq(c, string(v))
 	} else if v, ok := endpoint.(SFWEndpoint); ok {
 		return imgReq(c, string(v))
-	} else {
-		log.Fatalln("You provided the wrong endpoint.")
 	}
-	return "", nil
+	return "", errors.New("Wrong Endpoint provided")
 }
 
 func imgReq(c *Client, ep string) (string, error) {

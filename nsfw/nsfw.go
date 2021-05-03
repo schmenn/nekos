@@ -1,8 +1,6 @@
 package nsfw
 
-import(
-	"github.com/Schmenn/nekos"
-)
+import "github.com/Schmenn/nekos"
 
 // NSFW endpoints
 const (
