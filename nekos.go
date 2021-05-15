@@ -3,8 +3,9 @@ package nekos
 import (
 	"encoding/json"
 	"errors"
-	"io/ioutil"
+	"io"
 	"net/http"
+	"net/url"
 	"time"
 )
 
@@ -51,11 +52,31 @@ func imgReq(c *Client, ep string) (string, error) {
 		return "", err
 	}
 	defer res.Body.Close()
-	body, err := ioutil.ReadAll(res.Body)
+	body, err := io.ReadAll(res.Body)
 	var response urlresponse
 	err = json.Unmarshal(body, &response)
 	if err != nil {
 		return "", err
 	}
 	return response.URL, nil
+}
+
+func (c *Client) OwOify(text string) (string, error) {
+	res, err := http.Get("https://nekos.life/api/v2/owoify?text=" + url.QueryEscape(text))
+	if err != nil {
+		return "", err
+	}
+	defer res.Body.Close()
+	r := struct {
+		Text string `json:"owo"`
+	}{}
+	body, err := io.ReadAll(res.Body)
+	if err != nil {
+		return "", err
+	}
+	err = json.Unmarshal(body, &r)
+	if err != nil {
+		return "", err
+	}
+	return r.Text, nil
 }

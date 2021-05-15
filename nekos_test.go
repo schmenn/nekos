@@ -21,4 +21,9 @@ func TestMain(m *testing.M) {
 		panic(err)
 	}
 	fmt.Println(sfwurl)
+  owotext, err := c.OwOify("this is a test: lorem ipsum dolor sit amet.")
+  if err != nil {
+    panic(err)
+  }
+  fmt.Println(owotext)
 }
