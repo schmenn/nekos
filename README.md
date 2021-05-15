@@ -28,17 +28,15 @@ import(
 )
 
 func main() {
-  // Make a new client
-  c := nekos.New()
 
   // get a sfw image url
-  sfwURL, err := c.Image(sfw.Tickle) // "https://cdn.nekos.life/tickle/tickle_012.gif"
+  sfwURL, err := nekos.Image(sfw.Tickle) // "https://cdn.nekos.life/tickle/tickle_012.gif"
   if err != nil {
     // handle error
   }
 
   // get a nsfw image url
-  nsfwURL, err := c.Image(nsfw.RandomHentaiGIF) // "https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_0071.gif"
+  nsfwURL, err := nekos.Image(nsfw.RandomHentaiGIF) // "https://cdn.nekos.life/Random_hentai_gif/Random_hentai_gifNB_0071.gif"
   if err != nil {
     // handle error
   }
