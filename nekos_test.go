@@ -10,20 +10,19 @@ import (
 )
 
 func TestMain(m *testing.M) {
-	c := nekos.New()
-	nsfwurl, err := c.Image(nsfw.NekoGIF)
+	nsfwurl, err := nekos.Image(nsfw.NekoGIF)
 	if err != nil {
 		panic(err)
 	}
 	fmt.Println(nsfwurl)
-	sfwurl, err := c.Image(sfw.NekoGIF)
+	sfwurl, err := nekos.Image(sfw.NekoGIF)
 	if err != nil {
 		panic(err)
 	}
 	fmt.Println(sfwurl)
-  owotext, err := c.OwOify("this is a test: lorem ipsum dolor sit amet.")
-  if err != nil {
-    panic(err)
-  }
-  fmt.Println(owotext)
+	owotext, err := nekos.OwOify("this is a test: lorem ipsum dolor sit amet.")
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(owotext)
 }
