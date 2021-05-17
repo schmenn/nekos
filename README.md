@@ -4,12 +4,13 @@ A lightweight wrapper for the nekos.life API without external dependencies
 ## Current Features:
 
 all SFW and NSFW image endpoints
+all text endpoints
 
 ## TODO:
 - [x] NSFW endpoints
 - [x] SFW endpoints
-- [ ] Text endpoints
-- [ ] Better errors
+- [x] Text endpoints
+- [x] Better errors
 
 ## Examples:
 
